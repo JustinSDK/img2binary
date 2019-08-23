@@ -8,6 +8,7 @@ Tool to convert an image into 0 and 1. A black and white picture is suggested. 0
 - OpenCV
 
 If you don’t have OpenCV installed, install it via pip:
+
     > pip install opencv-python
 
 # Usage
