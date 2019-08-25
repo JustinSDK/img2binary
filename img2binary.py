@@ -23,10 +23,10 @@ def main():
                 dest.write('[\n')
                 for r in range(0, leng - 1):
                     dest.write('\t')
-                    dest.write(str(binary[r])[1:-1])
+                    dest.write(str(binary[r]))
                     dest.write(',\n')
                 dest.write('\t')
-                dest.write(str(binary[-1])[1:-1])
+                dest.write(str(binary[-1]))
                 dest.write('\n]')
         except:
             print('If you don’t have OpenCV installed, install it via pip.')
