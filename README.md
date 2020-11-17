@@ -19,7 +19,7 @@ Given `smile.png` like this:
 
 Below is the command to generate binary data into `smile.txt`:
 
-    > python img2binary smile.png smile.txt
+    > python img2binary.py smile.png smile.txt
 
 `smile.txt` will contain data like this:
 
