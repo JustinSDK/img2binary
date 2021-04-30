@@ -16,7 +16,7 @@ def main():
             import cv2
             args = parser.parse_args()
             img = cv2.imread(args.src, 2)
-            _, bw_img = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY)
+            _, bw_img = cv2.threshold(img, 0,255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
 
             binary = numpy.where(bw_img == 255, 1, bw_img) 
             with open(args.dest, 'w') as dest:
